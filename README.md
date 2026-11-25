@@ -1,6 +1,6 @@
 # Quench distortion and cracking of large forgings (C10)
 
-> Workspace folder: `e10-heat-treatment-inverse-design` · Suggested GitHub repository: `metallurgy-heat-treatment`
+> Workspace folder: `e10-heat-treatment-inverse-design` · Suggested GitHub repository: `quench-distortion-optimizer`
 > Epic: E10 · Weeks: W40–W43 · Evidence level: **A + B**
 > Master specification: [`CASES.md`](https://github.com/ahmadishamulayadyakmal/metallurgy-project/blob/main/CASES.md) §4 · Download the papers: [`JOURNALS.md`](https://github.com/ahmadishamulayadyakmal/metallurgy-project/blob/main/JOURNALS.md)
 
@@ -64,22 +64,22 @@ is pushed as its own repository.
 The real industrial case dossier is in `case/`: `README.md` (full case card),
 `evidence.md`, `sources.md` and `week_plan.md`.
 
-## Push this folder to GitHub
+## Repository status and GitHub Desktop
 
-This folder is prepared but is **not** a Git repository yet:
+This folder is already a Git repository on `main`, pushed to GitHub as
+`quench-distortion-optimizer` with an SSH `origin`. In GitHub Desktop, choose **Add local
+repository** and select this folder; do not clone into the same path.
 
 ```bash
-cd e10-heat-treatment-inverse-design
-git init
-git branch -M main
-git remote add origin https://github.com/<your-user>/metallurgy-heat-treatment.git
-git add .
-git commit -m "Initial import: C10 · W40–W43"
-git push -u origin main
+git status --short --branch
+git pull --rebase origin main
+git push origin main
 ```
 
-Use weekly tags `wNN` and one case tag `c10` inside this repository.
-Never commit API keys, raw downloaded datasets or publisher PDFs.
+Weekly work follows `CONTRIBUTING.md`: one PR, green tests, one artefact, one
+README paragraph, `docs/sprints/wNN.md`, tag `wNN`. Tag `c10` only after
+all six README sections are complete.
+
 
 ## Language
 
